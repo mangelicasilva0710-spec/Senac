@@ -1,0 +1,87 @@
+
+body {
+  background: linear-gradient(135deg, #1a0e9e, #99edf1);
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+header {
+  color: white;
+  padding: 20px 0;
+}
+
+
+.painel {
+  background-color: rgb(171, 169, 234);
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  max-width: 400px;
+  margin: auto;
+  padding: 30px;
+}
+
+#dica {
+  font-size: 1.2em;
+  color: #040331;
+  margin-bottom: 20px;
+}
+
+#botao {
+  background-color: #625fb7;
+    color:  #363890;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+
+button:hover {
+    background-color: #abb7fd;
+    /* muda a cor quando passa o mouse */
+    transform: scale(1.05);
+    /* aumenta levemente */
+}
+
+main{
+    width: 300px;        /* largura da caixa */
+  height: 200px;       /* altura da caixa */
+  background-color: #2473d3; /* cor de fundo */
+  border-radius: 10px; /* deixa a caixa arredondada (opcional) */
+  border: 2px solid #202a9f; /* borda (opcional) */
+  margin: 0 auto;
+}
+
+footer {
+  background-color: #f1f5f9;
+  padding: 10px;
+  color: #555;
+  font-size: 0.9em;
+}
+
+@media screen and (max-width: 780px) {
+    headerc h1 {
+        font-size: 1.3rem;
+    }
+    #dica {
+        font-size: 1rem;
+    }
+
+    #botao {
+        font-size: 0.95rem;
+        padding: 10px 20px;
+    }
+    
+}
