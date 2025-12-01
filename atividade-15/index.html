@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monte sua Refeição</title>
+    <link rel="stylesheet" href="./css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Monte sua Refeição</h1>
+    </header>
+
+    <main>
+        <section class="painel">
+            <form id="form">
+                <label>Escolha o Prato</label>
+                <select id="prato">
+                    <option value="">Selecione o item</option>
+                    <option value="Croissant doce">Croissant doce</option>
+                    <option value="Sanduíches naturais">Sanduíches naturais</option>
+                    <option value="Panquecas doces">Panquecas doces</option>
+                </select>
+
+                <label>Escolha a Bebida</label>
+                <select id="bebida">
+                    <option value="">Selecione o item</option>
+                    <option value="Espresso">Espresso</option>
+                    <option value="Chocolate quente">Chocolate quente</option>
+                    <option value="Smoothies">Smoothies</option>
+                </select>
+
+                <p>Adicionais:</p>
+                <label><input type="checkbox" value="Sobremesa"> Sobremesa</label>
+                <label><input type="checkbox" value="Molho Extra"> Molho Extra</label>
+                <label><input type="checkbox" value="Embalagem Premium"> Embalagem Premium</label>
+
+                <div class="acoes">
+                    <button type="button" id="calcular">Calcular Total</button>
+                </div>
+            </form>
+
+            <div id="erro" class="erro"></div>
+        </section>
+
+        <section id="resultado" class="hidden painel">
+            <h2>Resumo do Pedido</h2>
+
+            <p><b>Prato:</b> <span id="res-prato"></span></p>
+            <p><b>Bebida:</b> <span id="res-bebida"></span></p>
+
+            <p><b>Adicionais:</b></p>
+            <ul id="res-adicionais"></ul>
+
+            <p class="total"><b>Total:</b> R$ <span id="res-total"></span></p>
+
+            <button id="novoPedido">Novo Pedido</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Maria Angélica - 2025</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
