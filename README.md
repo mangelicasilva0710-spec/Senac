@@ -1,6 +1,6 @@
-# Senac
+# Senac 📚
 
-##Tcnologias e Marketing
+##Tecnologias e Marketing 👩🏻‍💻
 
 Mistrado por: Maria Angélica
 
