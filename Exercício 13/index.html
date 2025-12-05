@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Painel de Metas ou Tarefas</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Adicionar Meta ou Tarefas</h2>
+            <form class="fomulario">
+                <label for="meta">Nome da Meta</label>]
+                <input type="text" id="meta" placeholder="Digite o nome da Meta">
+                <label for="descricao"
+                aria-placeholder="Descricao">Descrição</label>
+                <textarea id="descricao"></textarea>
+                <label for="prioridade">Prioridade</label>
+                <select id="prioridade">
+                    <option value="baixa">Baixa</option>
+                    <option value="media">Média</option>
+                    <option value="alta">Alta</option>
+                </select>
+                <label for="data">Data</label>
+                <input type="data" id="data">
+                <button id="adicionar" type="submit">Adicionar Meta</button>
+            </form>
+            <div class="erro"></div>
+        </section>
+        <section id="lista">
+            <h2>Metas Adicionar</h2>
+            <ul id="lista-metas"></ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Maria Angélica - 19 de Novembro  de 2025</p>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
